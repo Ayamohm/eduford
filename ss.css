@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(./eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-self:center;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    margin:auto ;
+    background: #f44336;
+    display: block;
+    transition:0.5s ;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    transition:0.5s ;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.ch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.im {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 120px;
+    margin-top: 100px;
+
+}
+
+.im img {
+
+    max-width: 200px; /* Adjust the max-width as needed */
+}
+/*---------------------------------------------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0; 
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon .fa-brands {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart{
+    color: #f44336;
+    margin: 0 5px;
+}
